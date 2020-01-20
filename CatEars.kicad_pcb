@@ -1595,7 +1595,7 @@
     )
   )
 
-  (gr_text "Free Hugs!" (at 213.995 128.397 90) (layer B.SilkS)
+  (gr_text "Free Hugs!" (at 214.503 127.381 90) (layer B.SilkS)
     (effects (font (size 1.2 1.2) (thickness 0.15) italic) (justify mirror))
   )
   (gr_text 2020-01-20 (at 186.4995 121.2215 65) (layer B.SilkS)

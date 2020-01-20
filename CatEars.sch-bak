@@ -889,4 +889,8 @@ Wire Wire Line
 	6100 2700 6200 2700
 Wire Wire Line
 	6600 2800 6600 2700
+Text Label 6000 1650 0    50   ~ 0
+USB_D+
+Text Label 6050 1750 0    50   ~ 0
+USB_D-
 $EndSCHEMATC

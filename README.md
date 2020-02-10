@@ -2,7 +2,7 @@
 
 This is a project to create a pair of programmable neko mimis that feature ten LEDs.
 
-## WARNINGS - MAX POWER DRAW and BRIGHTNESS and HEALTH
+## WARNINGS - *max power draw* and *brightness* and *health*
 
 Please be aware that the LEDs can *easily* exceed the max power draw of this circuit design. It is highly recommended not to exceed 150 mA. They're cat ears, you don't need to blind everyone - keep the NeoPixel library brightness down to around 50 or so, tops :)
 
@@ -22,11 +22,15 @@ Also be aware some people are *photo sensitive* - these are meant for rave envir
 
 I'm posting this as a learning project with no intent to make a profit. I used a lot of bits of source material (see thanks below), and thus as I am not a lawyer, I can't comment as to rights other than to say that I claim no rights to my creation - use what I did as you please :) But... it'll probably take some re-imagining of the design for it to be truly original.
 
+Thus, I'm not promising any particular licence but I lay no claim to anything - everything I've done you can use as you wish though credit would be nice. Or even just telling me it was useful to you or cheered you up a little, I like positive feedback :D --- The bits that aren't mine (like the OpenMoji on the silkscreen), are under their licences.
+
 Also, I'm obviously not responsible for injuries or anything like that - this is definitely not a safety-tested, commercial project. Build at your own risk. It probably won't even work :)
 
 ## Build Notes
 
 You really shouldn't draw over 50 mA or so of power, you're probably blinding people if you do :) - see warnings above. Thus, you should be fine to input all the way up to the linear regulator max voltage rating of 6V - but you're wasting energy over 3.3V. Thus, 3x NiMH batteries or a 3.7V Lion battery would be good power choices - be smart and sensible though. Batteries can be dangerous.
+
+Boards can be ordered from [Osh Park](https://oshpark.com/shared_projects/3kRYov0c) - that's not an affiliate link or anything, just a convenient source. And they're purple.
 
 ## Bill of Materials
 

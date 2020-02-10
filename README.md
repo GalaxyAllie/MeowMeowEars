@@ -20,9 +20,8 @@ Also be aware some people are *photo sensitive* - these are meant for rave envir
 
 ## Copyright/Liability
 
-I'm posting this as a learning project with no intent to make a profit. I used a lot of bits of source material (see thanks below), and thus as I am not a lawyer, I can't comment as to rights other than to say that I claim no rights to my creation - use what I did as you please :) But... it'll probably take some re-imagining of the design for it to be truly original.
-
-Thus, I'm not promising any particular licence but I lay no claim to anything - everything I've done you can use as you wish though credit would be nice. Or even just telling me it was useful to you or cheered you up a little, I like positive feedback :D --- The bits that aren't mine (like the OpenMoji on the silkscreen), are under their licences.
+With the exception of the silkscreen, which I licence under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#) to comply with the terms of the OpenMoji licence, this project is licenced under the MIT licence. Please see LICENSE.md
+ for details.
 
 Also, I'm obviously not responsible for injuries or anything like that - this is definitely not a safety-tested, commercial project. Build at your own risk. It probably won't even work :)
 

@@ -20,8 +20,7 @@ Also be aware some people are *photo sensitive* - these are meant for rave envir
 
 ## Copyright/Liability
 
-With the exception of the silkscreen, which I licence under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#) to comply with the terms of the OpenMoji licence, this project is licenced under the MIT licence. Please see LICENSE.md
- for details.
+I licence this work under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#)
 
 Also, I'm obviously not responsible for injuries or anything like that - this is definitely not a safety-tested, commercial project. Build at your own risk. It probably won't even work :)
 

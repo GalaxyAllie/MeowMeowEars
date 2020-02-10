@@ -9,7 +9,7 @@
 int delayTime = 20;
 int redValue = 127;
 int greenValue = 0;
-int blueValue = 32;
+int blueValue = 255;
 int catSelect = 0;
 int colourIncrement = 1;
 int pixelDisp = 0;
@@ -27,7 +27,7 @@ void setup() {
 // Linear regulator can get *hot* and battery life will be greatly reduced for little visible difference!
 // - NOT recommended to run above 127 (half brightness) as designed
 // ...linear regulator may get very hot above 127 brightness depending on light pattern.
-    flowers.setBrightness(50);
+    flowers.setBrightness(40);
 }
 
 void loop() {
@@ -36,15 +36,15 @@ void loop() {
 // 
 // - Rainbow Life -
 // 
-    for(long firstFlowerColour = 5*65536; firstFlowerColour > 0; firstFlowerColour -= 256) {
-        for(int pixelSel = 0; pixelSel < flowerCount; pixelSel++){
-            int colourSel = firstFlowerColour + (pixelSel * 65536L / flowerCount);
-            uint32_t rainbowSel = flowers.gamma32(flowers.ColorHSV(colourSel));
-            flowers.setPixelColor(pixelSel, rainbowSel);
-        }
-        flowers.show();
-        delay(delayTime);
-    }
+    // for(long firstFlowerColour = 5*65536; firstFlowerColour > 0; firstFlowerColour -= 256) {
+    //     for(int pixelSel = 0; pixelSel < flowerCount; pixelSel++){
+    //         int colourSel = firstFlowerColour + (pixelSel * 65536L / flowerCount);
+    //         uint32_t rainbowSel = flowers.gamma32(flowers.ColorHSV(colourSel));
+    //         flowers.setPixelColor(pixelSel, rainbowSel);
+    //     }
+    //     flowers.show();
+    //     delay(delayTime);
+    // }
 // 
 // - Twinkle Twinkle, Little Star -
 // 
@@ -74,20 +74,40 @@ void loop() {
     // flowers.show();
     // delay(random(55, 140));
 // 
-// - Pink to Purple Fade -
+// - Unicorn Magic -
+//     
+    for(int pixelSel = 0; pixelSel < flowerCount; pixelSel++){
+        flowers.setPixelColor(pixelSel, 127, 0, blueValue);
+    }
+    flowers.show();
+    delay(delayTime);
+    blueValue = blueValue + colourIncrement;
+    if(blueValue > 255){
+        blueValue = 255;
+        colourIncrement = -1;
+    }
+    if(blueValue < 32){
+        blueValue = 32;
+        colourIncrement = 1;
+    }
+// 
+// - Under the Sea -
 //     
     // for(int pixelSel = 0; pixelSel < flowerCount; pixelSel++){
-    //     flowers.setPixelColor(pixelSel, 127, 0, blueValue);
+    //     flowers.setPixelColor(pixelSel, 0, greenValue, blueValue);
     // }
     // flowers.show();
     // delay(delayTime);
-    // blueValue = blueValue + colourIncrement;
-    // if(blueValue > 255){
-    //     blueValue = 255;
+    // greenValue = greenValue + colourIncrement;
+    // blueValue = blueValue - colourIncrement;
+    // if((greenValue > 255) || (blueValue < 0)){
+    //     greenValue = 255;
+    //     blueValue = 0;
     //     colourIncrement = -1;
     // }
-    // if(blueValue < 32){
-    //     blueValue = 32;
+    // if((greenValue < 0) || (blueValue > 255)){
+    //     greenValue = 0;
+    //     blueValue = 255;
     //     colourIncrement = 1;
     // }
 // 

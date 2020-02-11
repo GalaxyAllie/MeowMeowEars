@@ -27,7 +27,7 @@ void setup() {
 // Linear regulator can get *hot* and battery life will be greatly reduced for little visible difference!
 // - NOT recommended to run above 127 (half brightness) as designed
 // ...linear regulator may get very hot above 127 brightness depending on light pattern.
-    flowers.setBrightness(40);
+    flowers.setBrightness(20);
 }
 
 void loop() {
@@ -76,40 +76,40 @@ void loop() {
 // 
 // - Unicorn Magic -
 //     
-    for(int pixelSel = 0; pixelSel < flowerCount; pixelSel++){
-        flowers.setPixelColor(pixelSel, 127, 0, blueValue);
-    }
-    flowers.show();
-    delay(delayTime);
-    blueValue = blueValue + colourIncrement;
-    if(blueValue > 255){
-        blueValue = 255;
-        colourIncrement = -1;
-    }
-    if(blueValue < 32){
-        blueValue = 32;
-        colourIncrement = 1;
-    }
-// 
-// - Under the Sea -
-//     
     // for(int pixelSel = 0; pixelSel < flowerCount; pixelSel++){
-    //     flowers.setPixelColor(pixelSel, 0, greenValue, blueValue);
+    //     flowers.setPixelColor(pixelSel, 127, 0, blueValue);
     // }
     // flowers.show();
     // delay(delayTime);
-    // greenValue = greenValue + colourIncrement;
-    // blueValue = blueValue - colourIncrement;
-    // if((greenValue > 255) || (blueValue < 0)){
-    //     greenValue = 255;
-    //     blueValue = 0;
+    // blueValue = blueValue + colourIncrement;
+    // if(blueValue > 255){
+    //     blueValue = 255;
     //     colourIncrement = -1;
     // }
-    // if((greenValue < 0) || (blueValue > 255)){
-    //     greenValue = 0;
-    //     blueValue = 255;
+    // if(blueValue < 32){
+    //     blueValue = 32;
     //     colourIncrement = 1;
     // }
+// 
+// - Under the Sea -
+//     
+    for(int pixelSel = 0; pixelSel < flowerCount; pixelSel++){
+        flowers.setPixelColor(pixelSel, 0, greenValue, blueValue);
+    }
+    flowers.show();
+    delay(delayTime);
+    greenValue = greenValue + colourIncrement;
+    blueValue = blueValue - colourIncrement;
+    if((greenValue > 255) || (blueValue < 0)){
+        greenValue = 255;
+        blueValue = 0;
+        colourIncrement = -1;
+    }
+    if((greenValue < 0) || (blueValue > 255)){
+        greenValue = 0;
+        blueValue = 255;
+        colourIncrement = 1;
+    }
 // 
 // - Trans Pride -
 // 

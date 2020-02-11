@@ -47,7 +47,7 @@ Boards can be ordered from [Osh Park](https://oshpark.com/shared_projects/3kRYov
 | USB3076-30-A                            | GCT                          | 1   |
 | 510 Ohm 0805 Resistor (diff if UV sub)  | Any                          | 2   |
 | 330 Ohm 0805 Resistor                   | Any                          | 1   |
-| TL3342 Switch (or equivalent)           | E-Switch (or generic)        | 1   |
+| 3.5 x 6 mm push button switch           | Generic                      | 1   |
 
 ## Example Code
 

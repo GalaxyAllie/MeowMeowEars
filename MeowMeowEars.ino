@@ -243,26 +243,41 @@ void loop() {
                 }
                 flowers.setPixelColor(pixelDisp, 31, 31, 255);
             }
-        if(capTouchDetect() == true){
-            delay(50);
             if(capTouchDetect() == true){
-                modeSel = 0;
-                delay(200);
+                delay(50);
+                if(capTouchDetect() == true){
+                    modeSel = 0;
+                    delay(200);
+                }
+            }
+            if(modeSel != 5){
+                break;
+            }
+            delay(200);
+            if(capTouchDetect() == true){
+                delay(50);
+                if(capTouchDetect() == true){
+                    modeSel = 0;
+                    delay(200);
+                }
+            }
+            flowers.show();
+            delay(200);
+            if(capTouchDetect() == true){
+                delay(50);
+                if(capTouchDetect() == true){
+                    modeSel = 0;
+                    delay(200);
+                }
+            }
+            delay(200);
+            if(capTouchDetect() == true){
+                delay(50);
+                if(capTouchDetect() == true){
+                    modeSel = 0;
+                    delay(200);
+                }
             }
         }
-        if(modeSel != 5){
-            break;
-        }
-        flowers.show();
-        delay(200);
-        }
-        if(capTouchDetect() == true){
-            delay(50);
-            if(capTouchDetect() == true){
-                modeSel = 0;
-                delay(200);
-            }
-        }
-        delay(200);
     }
 }

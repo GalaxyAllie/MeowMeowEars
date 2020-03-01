@@ -30,6 +30,8 @@ You really shouldn't draw over 50 mA or so of power, you're probably blinding pe
 
 Boards can be ordered from [Osh Park](https://oshpark.com/shared_projects/3kRYov0c) - that's not an affiliate link or anything, just a convenient source. And they're purple.
 
+I have forked and modified the Adafruit Trinket M0 file from the Microsoft USB Mass Storage [Bootloader](https://github.com/MermaidAllie/uf2-samdx1/tree/master/build/alliecat_meowmeowears) for the ATSAMD21. The Trinket M0 bootloader also works, tho!
+
 ## Bill of Materials
 
 | Component                               | Manufacturer                 | Qty |

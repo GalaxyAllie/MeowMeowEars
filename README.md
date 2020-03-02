@@ -28,7 +28,7 @@ Also, I'm obviously not responsible for injuries or anything like that - this is
 
 You really shouldn't draw over 50 mA or so of power, you're probably blinding people if you do :) - see warnings above. Thus, you should be fine to input all the way up to the linear regulator max voltage rating of 6V - but you're wasting energy over 3.3V. Thus, 3x NiMH batteries or a 3.7V Lion battery would be good power choices - be smart and sensible though. Batteries can be dangerous. There is no hardware over-discharge protection, so use only batteries with this protection!
 
-Boards can be ordered from [Osh Park](https://oshpark.com/shared_projects/PK2iEdH1) - that's not an affiliate link or anything, just a convenient source. And they're purple.
+Boards can be ordered from [Osh Park](https://oshpark.com/shared_projects/LssyuQtY) - that's not an affiliate link or anything, just a convenient source. And they're purple.
 
 I have forked and modified the Adafruit Trinket M0 file from the Microsoft USB Mass Storage [Bootloader](https://github.com/MermaidAllie/uf2-samdx1/tree/master/build/alliecat_meowmeowears) for the ATSAMD21. The Trinket M0 bootloader also works, tho!
 
@@ -80,3 +80,7 @@ This added an ATSAMD21 microcontroller.
 ### v3
 
 This is the release version - it fixes the major bugs and makes them ready for general use.
+
+### v3b
+
+Minor update - reset on back where it's useful, more room to insert battery... not much else :) 
